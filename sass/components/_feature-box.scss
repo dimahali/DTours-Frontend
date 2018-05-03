@@ -1,0 +1,40 @@
+.feature-box {
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: .3rem;
+    box-shadow: 0 1rem 4rem rgba($color-black, .15);
+    outline-offset: .5rem;
+    transition: all .3s;
+    position: relative;
+    
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+    }
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.05);
+        // outline: .4rem solid rgba($color-white, .8);
+    }
+    &:hover::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1rem;
+        bottom: -1rem;
+        left: -1rem;
+        right: -1rem;
+        border-radius: 3px;
+        border: .5rem solid rgba($color-white, .8);
+    }
+    &__text {
+        font-weight: 100;
+    }
+}

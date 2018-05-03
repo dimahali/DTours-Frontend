@@ -1,0 +1,24 @@
+@mixin gradient-bg($color-primary-light, $color-primary-dark, $file){
+
+    background-image: -webkit-linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url($file);
+    background-image: -moz-linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url($file);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url($file);
+
+}
+
+@mixin gradient-bg-color($color-light, $color-dark){
+
+    background-image: -webkit-linear-gradient(to right bottom, $color-light, $color-dark);
+    background-image: -moz-linear-gradient(to right bottom, $color-light, $color-dark);
+    background-image: linear-gradient(to right bottom, $color-light, $color-dark);
+
+}
+
+@mixin clearfix{
+
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Natours Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass --output-style compressed sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "Natours"
+  ],
+  "author": "Hamid-Ali",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
